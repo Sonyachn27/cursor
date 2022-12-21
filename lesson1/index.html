@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body {
+        font-size: 1.5rem;
+        color: darkblue;
+    }
+    </style>
+</head>
+<body>
+    <h1> Setting up Git </h1>
+    <ul> 
+        <li> 
+            <b> git config --global user.name blabla 
+                <br>
+                git config --global user.email blabal@bla
+            </b>
+
+            <br> 
+            <br>
+
+             <b> APPOINTMENT</b> 
+
+             <br>
+
+                <p>"The first thing you should do when you install Git is to set your user name and email address. 
+                    This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating"
+            </p>
+
+        </li>
+
+        <li>
+            <b> git init</b>
+
+            <br> 
+            <br>
+
+            <b> APPOINTMENT</b> 
+
+            <br> 
+
+                <p>"By default Git will create a branch called master when you create a new repository with git init.
+                     From Git version 2.28 onwards, you can set a different name for the initial branch."
+            </p>
+        </li>
+        <li> 
+            <b>git status</b> 
+
+            <br> 
+            <br>
+
+            <b> APPOINTMENT</b> 
+
+            <br> 
+
+            <p> 
+                "Show the working tree status. "
+            </p>
+
+        </li>
+        <li>
+            <b> git add</b> 
+
+            <br>
+            <br>
+
+            <b > APPOINTMENT </b>
+
+            <br>
+
+            <p> 
+                "This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit."
+            </p>
+        </li>
+
+        <li>
+            <b> git commit </b>
+            <br> 
+            <br>
+            <b>APPOINTMENT</b> 
+            <br>
+            <p>
+                "Create a new commit containing the current contents of the index and the given log message describing the changes." 
+                 </p>
+        </li>
+        <li>
+            <b>git log </b>
+            <br>
+            <br>
+            <b>APPOINTMENT </b>
+            <br> 
+            <p> "Shows the commit logs." </p>
+ </li>
+        <li>
+            <b>git checkout</b>
+            <br>
+            <br> 
+            <b> APPOINTMENT </b>
+            <p>"Updates files in the working tree to match the version in the index or the specified tree. 
+                If no pathspec was given, git checkout will also update HEAD to set the specified branch as the current branch." </p>
+            </li>
+        <li>
+            <b>git branch </b>
+            <br>
+            <br>
+            <b>APPOINTMENT </b>
+            <br>
+            <p>"List, create, or delete branches. With a -m or -M option, &#60;oldbranch&#62; will be renamed to &#60;newbranch&#62;. If &#60;oldbranch&#62; had a corresponding reflog, it is renamed to match &#60;newbranch&#62;, and a reflog entry is created to remember the branch renaming. If &#60;newbranch&#62; exists, -M must be used to force the rename to happen." </p>
+            </li>
+        <li>
+            <b> git push</b>
+            <br>
+            <br>
+            <b>APPOINTMENT </b>
+            <br>
+            <p> "Updates remote refs using local refs, while sending objects necessary to complete the given refs."</p>
+        </li>
+        <li>
+            <b>git pull </b>
+                <br>  
+                <br>
+                <b> APPOINTMENT </b> 
+                <br>
+                <p>"Fetch from and integrate with another repository or a local branch."</p> 
+            
+        </li>
+        <li>
+            <b> git merge</b>
+            <br>
+            <br>
+            <b>APPOINTMENT </b>
+            <p> "Join two or more development histories together"</p>
+        </li>
+
+        <li>
+            <b> git clone</b>
+            <br>
+            <br>
+            <b>APPOINTMENT</b>
+            <p>"Clone a repository into a new directory"</p>
+        </li>
+    </ul>
+
+    <h2> .gitignore file </h2>
+    <p> "Specifies intentionally untracked files to ignore. A gitignore file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected; see the NOTES below for details.
+        Each line in a gitignore file specifies a pattern. When deciding whether to ignore a path, Git normally checks gitignore patterns from multiple sources, with the following order of precedence, from highest to lowest"</p>
+
+    
+        <ul>
+            <li>
+                <b>git revert</b>
+                <br>
+                <br>
+                <b>APPOINTMENT</b>
+                <p> "Revert some existing commits. git revert is used to record some new commits to reverse the effect of some earlier commits (often only a faulty one). If you want to throw away all uncommitted changes in your working directory, you should see git-reset[1], particularly the --hard option. "
+
+                </p>
+
+            </li>
+            <li>
+                <b>git reset</b>
+                <br>
+                <br>
+                <b>APPOINTMENT</b>
+                <p> "Reset current HEAD to the specified state. "
+                 </p>
+            </li>
+            <li>
+                <b>git rebase</b>
+                <br>
+                <br>
+                <b>APPOINTMENT</b>
+                <p> "Reapply commits on top of another base tip. "
+                 </p>
+            </li>
+            <li>
+                <b>git cherry-pick</b>
+                <br>
+                <br>
+                <b>APPOINTMENT</b>
+                <p> "Apply the changes introduced by some existing commits. Given one or more existing commits, apply the change each one introduces, recording a new commit for each. 
+                    This requires your working tree to be clean (no modifications from the HEAD commit). "
+                 </p>
+            </li>
+            <li>   
+                <b>git stash</b>
+                <br>
+                <br>
+                <b>APPOINTMENT</b>
+                <p> "Stash the changes in a dirty working directory away. 
+                    Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. 
+                    The command saves your local modifications away and reverts the working directory to match the HEAD commit. "
+                 </p> 
+            </li>
+        </ul>
+</body>
+</html>
