@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Raleway:ital@0;1&family=Roboto&display=swap');
+*{
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --index: calc(1vw+1vh);
+    --margin: calc(var(--index)*-1.5);
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #101010;
+}
+button {
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    
+}
+.body-header,
+.layers,
+.main-contact-form,
+.footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layers_text,
+.contact_text,
+.main-form,
+.footer-address,
+.footer_services,
+.footer_get,
+.footer_support,
+.address-paragraph,
+.list,
+.support__icon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.body-header {
+    height: calc(var(--index)*33.3);
+    background: #ED4C5C;
+    width: 100%;
+}
+.layers,
+.main-contact-form {
+    flex-direction: row;
+    margin-top: var(--margin);
+    padding: calc(var(--index)*1.5);
+}
+.layers_text,
+.layer-img,
+.contact_text,
+.main-form {
+   position: relative;
+    margin-top: var(--margin);
+    width: 50%;
+}
+.layers_text,
+.contact_text {
+    justify-content: space-around;
+    height: auto;
+    padding: calc(var(--index)*8.2);
+    color: #ffffff;
+
+}
+.contact_title,
+.layer_title h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.layer-paragraph,
+ .contact_paragraph {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: justify;
+}
+
+.layer_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:25px;
+}
+.layer_icon img {
+    width: 32px;
+    height: 32px;
+}
+.layer-img img{
+    height: 100% ;
+    max-width: 100%;
+}
+.main-form {
+    
+    justify-content: space-around;
+    height: auto;
+    padding-right: calc(var(--index)*14.5);
+    gap: 24px;
+    
+}
+.main-contact-form {
+    height: calc(var(--index)*33.3); 
+    width: 100%;
+    
+}
+.name,
+.phone-number-container,
+.select-service-form,
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 30px;
+    height: 100%;
+
+}
+.contact_text{
+    color: #000000;
+}
+
+#first-name,
+#last-name,
+#phone-number,
+.select-service-form {
+    position: relative;
+    height: 3em;             
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    border-radius: 6px;
+    border: 1px solid #333333;
+    width: 50%;
+    padding-left: calc(var(--index)*.75);
+    font-size: 16px;
+}
+.phone-number-container,
+.select-service-form,
+.name,
+#phone-number {
+    width: 100%;
+} 
+ 
+.select-form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: rgba(19, 39, 67, 0.5);
+}
+.select-service-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 14px;
+    font-size: 16px;
+    color:rgba(19, 39, 67, 0.5);
+    cursor: pointer;
+}
+.select-form select {
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: .75em 2.5em .75em 1em;
+}
+.select-form:after{
+    content: "";
+    display: flex;
+    align-items: center;
+    background-image: url(../img/ChevronDown\(E70D\).svg);
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 1em;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+select:hover {
+    color:#FFFFFF;
+    transition: .75s ease;
+    background-color: #bebbbb;
+}
+
+ option{
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    color: #ED4C5C;
+    background-color:aliceblue;
+}
+option:hover {
+    background-color: #bebbbb;
+}
+.btn-submit {
+    position: relative;
+    font-size: 1em;          
+    height: 3em;  
+    background: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 30%;
+    
+}
+.btn-submit:hover {
+    background: #c43b48;
+    color: #ded8d8;
+    transition: .75s ease;
+}
+.footer_content {
+    position: relative;
+    align-items: center;
+    background: #FAFAFA;
+    height: calc(var(--index)*33.3);
+    width: 100%;
+    padding: calc(var(--index)*10);
+}
+.footer-address,
+.footer_services,
+.footer_get,
+.footer_support,
+.address-paragraph,
+.list,
+.support__icon {
+    justify-content: flex-start;
+    color: #101010;
+    width: 25%;
+    height: 100%;
+}
+.address-title,
+.services-title,
+.get__title,
+.support__title {
+    margin-top: calc(var(--index)*-5);
+    margin-bottom: 33px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.address-paragraph,
+.list,
+.get__number,
+.get__icon,
+.support__icon
+.copy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    width: 100%;
+}
+
+.list a{
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #000000;
+}
+.footer_get {
+    gap:11px
+}
+.get__icon{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.btn-icon {
+    border: none;
+    background: inherit;
+}
+.copy {
+    position: absolute;
+    left: 10%;
+    margin-top: calc(var(--index)*10);
+}
+
+@media screen and (max-width: 992px) {
+    *{
+        font-size: 10px;
+    }
+    .contact_title,
+    .layer_title h1 {
+        font-weight: 600;
+        font-size: .8rem;
+        line-height: 7px;
+}
+.layers,
+.main-contact-form {
+    flex-direction: row;
+    margin-top: calc(var(--index)*3.5);
+    padding: calc(var(--index)*9);
+}
+.layer-paragraph,
+.contact_paragraph {
+   margin-top: .3rem;
+   margin-bottom: .3rem;
+   font-size: .5rem;
+   }
+   .layer_icon{
+    width: 100%;
+    height: 100%;
+    gap:calc(var(--index)*1);
+   }
+.layer_icon img {
+    max-width: 1rem;
+    max-height: 1rem;
+}
+.main-form {
+    gap: calc(var(--index)*-3.55);
+    padding-right: calc(var(--index)*-10.5);
+    gap: calc(var(--index)*2);
+}
+.name{
+    gap: calc(var(--index)*2);
+}
+#first-name,
+#last-name,
+#phone-number,
+.select-service-form {
+    height: 2rem;
+    line-height: 3.5px;
+    width: 50%;
+    padding-left: calc(var(--index)*.75);
+    font-size: .7rem;
+}
+#phone-number {
+    width: 100%;
+}
+.select-form:after{
+    content: "";
+    display: flex;
+    align-items: center;
+    background-image: url(../img/ChevronDown\(E70D\).svg);
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 1rem;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+    .select-service-form {
+        line-height: 7px;
+        font-size: .3rem;
+    }
+    .select-form select{
+        padding: .25rem;
+    }
+    .btn-submit {
+        line-height: 6px;
+        width: 30%;
+    }
+    .footer_content{
+        gap:5px;
+    }
+    .address-title, 
+    .services-title, 
+    .get__title, 
+    .support__title {
+        margin-top: calc(var(--index)*-5);
+        margin-bottom: 1.1rem;
+        font-weight: 700;
+        font-size: .4rem;
+        text-align: center;
+    }
+    .address-paragraph, 
+    .list, .get__number,
+     .get__icon,
+      .support__icon .copy {
+        font-weight: 400;
+        font-size: .33em;
+        width: 100%;
+}
+.get__icon {
+    width:10%;
+    height: 10%;
+    gap: 0.5em;
+}
+.get-icon__facebook,
+.get-icon__linkedin,
+.get-icon__twitter {
+    width: 100%;
+    height: 100%;
+}
+.support__icon,
+.support__title{
+    width: 100%;
+    height: 100%;
+}
+}
