@@ -497,17 +497,7 @@ color: #4B5D68;
     width: 40px;
     height: 40px;
 }
-.slick-prev{
-    visibility: hidden;
-    top: 110% !important;
-    left: 90% !important;
-}
-.slick-next{
-    visibility: hidden;
-    top: 110% !important;
-    left: 95% !important;
 
-}
 
 .slide-info__paragraph{
     display: flex;
