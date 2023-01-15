@@ -24,16 +24,14 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 0 auto;
     
 }
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+.container{
+      
+    margin: 50px auto;
     position: relative;
-    max-width: 1248px;
+    max-width: 1117px;
     background-color: white;
 }
 
@@ -87,8 +85,8 @@ header{
     font-size: 16px;
     line-height: 160%;
     color: #4B5D68;
-    padding: 0 112px 0 0;
-    margin-top: 5%;
+   
+    margin-top: 50px;
 }
 .logo{
     display: flex;
@@ -174,13 +172,14 @@ gap: 40px;
     display: flex;
     align-items: center;
     background-image: url(../img/Group56vector.svg);
-    width: 20px;
-    height: 14px;
+    background: content;
+    width: 22px;
+    height: 16px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     transition: all .35s;
-    right: 20px;
+    right: 10px;
     z-index: 1;
     background-repeat: no-repeat;
 
@@ -200,7 +199,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 15%;
+    margin-top: 130px;
 }
 .headline-img{
     display: flex;
@@ -257,7 +256,7 @@ main{
 .middle-text-img {
 display: flex;
 
-margin-top: 10%;
+margin-top: 200px;
 width: 100%;
 padding: 32px 93px 24px 11px;
 background: rgba(240, 99, 184, 0.15);
@@ -281,7 +280,7 @@ border-radius: 50px;
     max-width: 475px;
     max-height: 310px;
     margin-top: 125px;
-    gap: 20%;
+    gap: 20px;
     flex-basis: 54%;
 }
 .middle_text h2 {
@@ -332,12 +331,12 @@ color: #4B5D68;
      justify-content: space-between;
      column-gap: 45px;
      row-gap: 105px;
-     margin-top: 15%;
+     margin-top: 150px;
 }
 
 .slab {
     display: flex;
-    max-width: 48%;
+    max-width: 47%;
     position: relative;
     
 }
@@ -350,7 +349,7 @@ color: #4B5D68;
     width: 100%;
     height: 100%;
 }
-.container{
+.container-slab{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -380,8 +379,8 @@ color: #4B5D68;
     display: flex;
     align-items: center;
     background-image: url(../img/Group56vector.svg);
-    width: 20px;
-    height: 14px;
+    width: 22px;
+    height: 16px;
     position: absolute;
     top: 47%;
     transform: translate(0, -50%);
@@ -434,8 +433,8 @@ color: #4B5D68;
     background: #FFFFFF;
     box-shadow:0px 20px 0px rgba(156, 105, 226, 0.3);
     border-radius: 20px;
-    margin-top: 10%;
-    gap: 15%;
+    margin-top: 88px;
+    gap: 15px;
 
          
 }
@@ -446,31 +445,32 @@ color: #4B5D68;
 .slide-content{
     display: flex;
     flex-direction: row;
-    gap: 15%;
+    gap: 15px;
     max-width: 743px;
     height: 330px;
-    margin: 10%;
+    padding: 80px 30px;
 }
 
-.slider-container{
-    display: flex !important;
+.slider-container.slider-container{
+    display: flex
     max-width: 743px;
-    gap: 10%;
-    margin-left: 15%;
-    flex-direction: row;
+    gap: 15px;
+    margin-left: 15px;
     width: 100%;
 }
 
-
-.slick-dots {
-    width: 25% !important;
-    margin: -4% !important;
+.slick-dots.slick-dots {
+    width: 25% ;
+    margin: -15px ;
     }
-.slick-dots li button:before {
-    top: -10% !important;
-    left: -10% !important;
-    color: rgb(255, 254, 254) !important;
+    .slick-dots.slick-dots li button:before  {
+    top: -10% ;
+    left: -10% ;
+    color: rgb(255, 254, 254);
     
+}
+.slick-dots.slick-dots li.slick-active button:before {
+    color: rgb(255, 255, 255);
 }
 .arrow {
         position: absolute; /* я не дуже впевнена щодо позиції абсолют*/
@@ -480,22 +480,22 @@ color: #4B5D68;
 }
 
 .prev  {
+   
     top: 90% ;
     left: 85% ;
 } 
-.prev:hover  {
-    transition: .5s ease;
-    width: 40px;
-    height: 30px;
-} 
+.prev:hover{
+    transform: scale(1.1);
+    transition: .75s ease;
+}
 .next {
+    
         top: 90% ;
         left: 90% ;
 }
-.next:hover {
-    transition: .5s ease;
-    width: 40px;
-    height: 40px;
+.next:hover{
+    transform: scale(1.1);
+    transition: .75s ease;
 }
 
 
@@ -537,14 +537,14 @@ color: #212353;
 max-width: 1600px;
 width:100%;
 height: 2px;
-margin-top: 10%;
+margin-top: 150px;
 background: #9C69E2;
 opacity: 0.2;
 }
 footer{
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 100px;
     max-width: 1600px;
     width: 100%;
     font-family: 'Avenir';
@@ -555,7 +555,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30%;
+    gap: 30px;
 }
 .adverse-info{
     display: flex;
@@ -569,7 +569,7 @@ footer{
 .footer_section {
     display: flex;
      flex-wrap: nowrap;
-     margin-top: 10%;
+     margin-top: 153px;
     gap: 97px;
 }
 .container-footer{
@@ -594,10 +594,10 @@ footer{
     font-size: 16px;
     line-height: 180%;
     letter-spacing: 0.01em;
-    margin-top: 15%;
+    margin-top: 67px;
 }
 .link_mail{
-    margin-top: 10%;
+    margin-top: 10px;
     font-size: 16px;
     line-height: 180%;
    
@@ -624,7 +624,7 @@ footer{
     font-weight: 900;
     font-size: 16px;
     line-height: 160%;
-    margin-bottom: 10%;
+    margin-bottom: 30px;
 }
 h4{
     width: 100%;
@@ -633,7 +633,7 @@ font-size: 16px;
 line-height: 160%;
 }
 .footer_social_img{
-    margin-top: 10%;
+    margin-top: 30px;
     display: flex;
     gap: 14px;
 }
@@ -642,10 +642,8 @@ line-height: 160%;
 .social_img3{
     display: flex;
     align-items: center;
-    max-width: 50px;
-    width: 100%;
-    height: 200%;
-    max-height: 50px;
+    width: 50px;
+    height: 50px;
     background: #212353;
     opacity: 0.1;
     justify-content: center;
@@ -668,7 +666,7 @@ line-height: 160%;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 93px;
 }
 .copy p{   
 font-weight: 400;
