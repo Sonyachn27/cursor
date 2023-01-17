@@ -1,0 +1,574 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Playfair+Display&family=Roboto&family=Rochester&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color:inherit;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: inherit;
+}
+li{
+    list-style: none;
+}
+body{
+    display: grid;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-columns: 100%;
+    font-family: 'Mulish', 'Playfair Display', 'Rochester','Roboto' sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    background: #F5F5F5;
+    height: 100vh;
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  
+}
+ 
+header {
+    
+    display: grid;
+    grid-area: header;
+    grid-gap:2vw;
+    margin: 0;
+    grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+    background: #ffffff;
+    text-align: center;
+    max-height: 76px;
+    width: 100%;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 41px;
+}
+header.container{
+  color: #FFFFFF;
+}
+.logo-name{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rochester';
+    color: #1B2437;  
+}
+
+.social,
+.basket {
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+  padding-top: 16px ;
+  padding-bottom: 16px;
+  
+}
+.social a,
+ .basket button {
+  margin: 15px;
+}
+
+
+nav{
+    display: grid;
+    grid-gap:2vw;
+    background: #ffffff;
+    text-align: center;
+    max-height: 76px;
+    padding: .5em;
+    width: 100%;
+    margin: 0 auto;
+    grid-area:nav;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-list{
+    display: grid;
+    justify-content: space-around;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 557px;
+    font-family: 'Playfair Display';
+    font-size: 28px;
+    line-height: 37px;
+    
+    color: #000000;
+  }
+  .nav-list a:hover {
+    text-decoration: underline;
+    color: #EDA3B5;
+    transition: .75s ease ;
+  }
+
+  main{
+    display: grid;
+    grid-area:main;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap:2vw;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    gap: 71px;
+    
+  }
+  .presentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 103px 164px;
+    width: 100%;
+    max-height: 569px;
+    background: url(../img/hero.png) no-repeat;
+    color: #FFFFFF;
+    text-align: start;
+    gap: 13px;
+    font-family: 'Mulish';
+  }
+
+  h1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    /* align-items: flex-start; */
+    width: 100%;
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    line-height: 67px; 
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+  .presentation-content{
+    display: grid;
+    
+    grid-template-rows: .5fr 1fr .4fr;
+    align-content: flex-start;
+    justify-content: start;
+    width:100%;
+    max-width: 446px;
+    max-height: 348px;
+    height: 100%;
+  }
+  .presentation-paragraph{
+    
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .show{
+    max-width: 255px;
+    max-height: 77px;
+    padding: 23px 78px;
+    background: #1B2437;
+    border-radius: 15px;
+    color:inherit;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+.spring{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1.8fr 1fr;
+  width: 100%;
+  height: 100%;
+  max-height: 802px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 71px 163px;
+  
+}
+.spring h2{
+  width: 100%;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 45px;
+  text-align: start;
+  color: inherit;
+  min-width: 119px;
+  max-width: 288px;
+}
+.spring span{
+  font-family: 'Mulish';
+font-size: 16px;
+line-height: 30px;
+  color: inherit;
+  text-align: start;
+}
+.popular-btn{
+  max-width: 93px;
+  max-height: 30px;
+ width: 100%;
+ padding: 0px 22px;
+  background: #FFFFFF;
+  opacity: 0.4;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-size: 14px;
+line-height: 30px;
+}
+.popular-btn:hover{
+  color: #ffffff;
+  background-color: #e86989;
+  transition: .75s ease;
+}
+.collection{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto auto auto auto;
+  gap: 30px;
+
+}
+.spring-collection1{
+  display: grid;
+  grid-template-rows: .5fr 1fr .4fr;
+  align-items: start;
+  justify-content: space-between;
+  max-width: 445px;
+  max-height: 458px;
+  width: 100%;
+  background: url(../img/women_collection_category.png);
+  border: none;
+  border-radius: 16px;
+  padding: 268px 125px 32px 32px;
+  color: #FFFFFF;
+  gap: 8px;
+  grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+.spring-collection2 {
+  display: grid;
+  background: #EFEFF4;
+  border-radius: 16px;
+  border: none;
+  max-width: 303px;
+  max-height: 225px;
+  padding: 53px 22px;
+  gap: 8px;
+  color: #1B2437;
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 1;
+  grid-column-end: 6;
+}
+.spring-collection3 {
+  display: grid;
+  background: url(../img/dresses_category.png) no-repeat;
+  border-radius: 16px;
+  border: none;
+  max-width: 303px;
+  max-height: 225px;
+  padding: 53px 22px;
+  gap: 8px;
+  color: #1B2437;
+  grid-row-start: 1;
+  grid-column-start: 6;
+  grid-row-end: 1;
+  grid-column-end: 8;
+}
+.spring-collection4{
+  display: grid;
+  background: url(../img/denim_jackets_category.png) no-repeat;
+  border-radius: 16px;
+  border: none;
+  max-width: 635px;
+  max-height: 204px;
+  padding: 65px 22px;
+  gap: 8px;
+  color: #1B2437;
+  grid-row-start: 2;
+  grid-column-start: 4;
+  grid-row-end: 2;
+  grid-column-end: 8;
+}
+
+.sliderbar{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(255px,1fr));
+  grid-template-rows: 100%;
+  /* padding: 71px 163px; */
+  background: #FFFFFF;
+border-radius: 16px;
+max-height: 313px;
+width: 100%;
+}
+.slider-child.slider-child {
+  width: 100%;
+  height: 330px;
+}
+.slider-content a{
+  padding: 39px;
+  align-items: center;
+max-width: 255px;
+max-height: 313px;
+  width: 100%;
+
+}
+.slider-img1,
+.slider-img2,
+.slider-img3,
+.slider-img4{
+  max-width: 255px;
+  max-height: 207px;
+}
+.slider-img1{
+ padding: 40px 50px;
+}
+.slider-img2{
+  padding: 35px 78px;
+}
+.slider-img3{
+  padding: 57px 50px;
+}
+.slider-img4{
+  padding: 37px 80px;
+}
+
+
+.slider-img1 img{
+  width: 100%;
+} 
+.slick-prev.slick-prev:before{
+  display: none;
+}
+.slick-dots.slick-dots li button{
+  color:#EFEFF4;
+}
+.slick-dots.slick-dots li.slick-active button{
+  color: #EDA3B5;
+}
+.slick-dots.slick-dots li.slick-active button:before {
+  color: #EDA3B5;
+}
+.lotbar{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 275px 1fr ;
+  max-width: 1110px;
+  width: 100%;
+  align-items: center;
+  /* padding: 0 165px;  */
+ margin: 0 auto;
+}
+.lotbar h2{
+  text-align: start;
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67px;
+color: #1B2437;
+}
+.lotbar-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3,minmax(350px,1fr));
+ gap: 30px;
+}
+
+.lot-container{
+  display: grid;
+  grid-template-columns:repeat(5,minmax(44px, 1fr)) ;
+  column-gap: 15px;
+  row-gap: 30px;
+  color: #000000;
+}
+.lot-container:hover{
+  box-shadow: 2px 5px 45px rgba(237, 163, 181, 0.25);
+}
+.lot-img{
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 5;
+  width: 100%;
+  min-width: 350px;
+}
+.lot-img img{
+  max-width: 350px;
+  width: 100%;
+}
+.like{
+  width: 44px;
+  height: 44px;
+  padding: 13px 13px 7px 13px;
+  border-radius: 50%;
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-row-end: 1;
+  grid-column-end: 5;
+  background-color: #ffffff;
+  opacity: 0.6;
+  margin-top: 16px;
+  margin-right: 16px;
+  
+}
+/* .like{
+тут має бути стиль для кнопки, коли її натиснуть, 
+але я не знаю як його зробити, тож просто залишу коментар
+} */
+.like img{
+  align-items: center;
+  justify-content: center;
+}
+
+.about-lot{
+  display: grid;
+  grid-template-columns: 50% 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 5;
+  text-align: start;
+  
+}
+.about-lot h3{
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-column-end: 3;
+  width: 100%;
+  font-family: 'Playfair Display';
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 30px;
+
+  
+}
+.lot-inform{
+  display: grid;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  width: 100%;
+  font-family: 'Mulish';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+}
+.price{
+  display: grid;
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 1;
+  text-align: start;
+  padding-top: 15px;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 30px;
+}
+.shop-now {
+  width: 100%;
+  max-width: 153px;
+  max-height: 58px;
+  display: grid;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  text-align: start;
+  padding-top: 15px;
+  font-family: 'Mulish';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #1B2437;
+  border-radius: 15px;
+}
+.shop-now:hover,
+.show:hover {
+  background: #EDA3B5;
+  border-radius: 15px;
+  color: #FFFFFF;
+  transition: .75s ease;
+}
+
+.contact{
+  display: grid;
+  grid-template-rows: 0.1fr 1fr;
+  max-width: 1110px;
+  width: 100%;
+  padding-left: 165px;
+  padding-right: 165px;
+  row-gap: 47px;
+}
+.contact h2{
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67px;
+  color: #1B2437;
+  text-align: start;
+}
+.map {
+width: 100%;
+padding: 12px;
+}
+.contacts{
+display: grid;
+grid-template-columns: 30% 30% 30%;
+grid-template-rows: 70px;
+padding: 12px;
+justify-content: space-between;
+}
+
+.contacts-item{
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 40px 30px;
+align-items: center;
+justify-items: center;
+gap: 20px;
+}
+  footer{
+    grid-area:footer;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid: 1fr 0.1fr / 1fr;
+max-height: 407px;
+  }
+  .footer-nav{
+  display: grid;
+  grid:1fr/repeat(4, 1fr);
+  max-height: 333px;
+  width: 100%;
+  }
+  .footer-info{
+    display: grid;
+    grid: 0,2fr 1fr/100%;
+    width: 100%;
+    padding: 32px;
+  }
