@@ -30,7 +30,7 @@ body{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    background: #F5F5F5;
+    
     
 }
 .container{
@@ -60,11 +60,14 @@ header {
     font-family: 'Rochester';
     color: #1B2437;  
     width: 100%;
-
+  max-width: 109px;
   font-weight: 400;
   font-size: 32px;
   line-height: 41px;
 
+}
+.logo-name a{
+  max-width: fit-content;
 }
 
 .social,
@@ -143,6 +146,9 @@ nav{
     grid-template-columns: 100%;
     text-align: center;
     width: 100%;
+    background: #F5F5F5;
+    
+    
   }
   .presentation{ 
     padding: 70px 165px;
@@ -543,15 +549,13 @@ color: #1B2437;
   transition: .75s ease;
 }
 
-.contact{
-  margin-top: 70px;
-}
+.contacts {
+  margin-bottom: 70px;
+  }
 .contact-content{
 display: grid;
   grid-template-rows: 0.1fr 1fr;
-  
   width: 100%;
-  
   row-gap: 47px;
 }
 .contact h2{
@@ -587,7 +591,7 @@ background: #FFFFFF;
     grid-area:footer;
     width: 100%;
     background-color: #FFFFFF;
-    margin-top: 70px;
+    
   }
   .footer-content{
 display: grid;
