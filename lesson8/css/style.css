@@ -642,6 +642,9 @@ display: grid;
     line-height: 30px;
     color: #000000;  
   }
+  .copy{
+    background: #E5E5EA;
+  }
   .copy-content{
     display: flex;
     justify-content: space-between;
