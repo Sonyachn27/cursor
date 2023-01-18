@@ -76,10 +76,11 @@ button::before{
     position: absolute;
     top: 40px;
     left: -226px;
-    
+    border-top: 3px solid #C4C4C4;
+    border-bottom: 3px solid #C4C4C4;
     border-radius: 3px;
     opacity: 0.8;
-    background: url(./Rectangle\ 3.svg);
+    
 
 }
 
@@ -93,40 +94,11 @@ button::after{
     position: absolute;
     top: 40px;
     left: 526px;
-    
+    border-top: 3px solid #C4C4C4;
+    border-bottom: 3px solid #C4C4C4;
     border-radius: 3px;
     opacity: 0.8;
-    background: url(./Rectangle\ 3.svg);
+    
 
 }
-.btn-container::before{
-    content: '';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 2px;
-    position: absolute;
-    top: 50px;
-    left: -226px;
-    
-    border-radius: 3px;
-    opacity: 0.8;
-    background: url(./Rectangle\ 3.svg);
-}
-.btn-container::after{
-    content: '';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 2px;
-    position: absolute;
-    top: 50px;
-    left: 526px;
-    
-    border-radius: 3px;
-    opacity: 0.8;
-    background: url(./Rectangle\ 3.svg);
 
-}
