@@ -132,15 +132,16 @@
                     </svg>
             </div>
             <div class="circle-mobile">
+              
+                <div class="number mobile-number">
+                    <span>7</span>
+                </div> 
                 <picture>
-                    <source media="(max-width: 720px)" srcset="./image/Vector3).svg">
-                    <source media="(min-width: 360px)" srcset="./image.Vector4).svg">
+                    <source media="(max-width: 720px)" srcset="./image/Vector4).svg">
+                    <source media="(min-width: 360px)" srcset="./image/Vector3).svg">
                     <img src="./image/Vector3).svg" alt="test">
                   </picture>
-                <!-- <img 
-                src="" 
-                alt="" 
-                srcset=" Vector4).svg 720w, Vector3).svg 1440w" /> -->
+            
                     
             </div>
             <div class="little-circle">
@@ -159,14 +160,7 @@
                                             <div class="circle circle9">
                                             </div>
                                         
-                                    
-                                
-                           
-                        
-                    
-                
-                    
-                
+                   
             </div>
         </section>
         <section class="info" >
@@ -363,15 +357,19 @@
                             <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 1.42062C14.4422 1.66154 13.8478 1.82123 13.2281 1.89877C13.8656 1.524 14.3522 0.935077 14.5809 0.225231C13.9866 0.574154 13.3303 0.820615 12.6309 0.958154C12.0666 0.366462 11.2622 0 10.3847 0C8.68219 0 7.31156 1.36062 7.31156 3.02862C7.31156 3.26862 7.33219 3.49938 7.38281 3.71908C4.82625 3.59631 2.56406 2.38985 1.04437 0.552C0.779062 1.00523 0.623438 1.524 0.623438 2.08246C0.623438 3.13108 1.17188 4.06062 1.98937 4.59877C1.49531 4.58954 1.01063 4.44831 0.6 4.22585C0.6 4.23508 0.6 4.24708 0.6 4.25908C0.6 5.73046 1.66594 6.95262 3.06375 7.23415C2.81344 7.30154 2.54063 7.33385 2.2575 7.33385C2.06063 7.33385 1.86187 7.32277 1.67531 7.28215C2.07375 8.48123 3.20438 9.36277 4.54875 9.39138C3.5025 10.1972 2.17406 10.6828 0.735938 10.6828C0.48375 10.6828 0.241875 10.6717 0 10.6412C1.36219 11.5062 2.97656 12 4.7175 12C10.3763 12 13.47 7.38462 13.47 3.384C13.47 3.25015 13.4653 3.12092 13.4587 2.99262C14.0691 2.56615 14.5819 2.03354 15 1.42062Z" fill="#03A9F4"/>
                                 </svg>
-                                                        </div>
+                             </div>
                         <p>  Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go</p>
                     </div>
                 </div>
 
+                
             </div>
+          
         </section>
         <section class="sports-logo">
             <div class="container">
+                <div class="sports-logo-content"> 
+                <h2> We have been featured in</h2>
                 <div class="img-sports">
                     <img src="./image/Group.svg" alt="Sports TV">
                     <img src="./image/Vector.svg" alt="Sports">
@@ -381,23 +379,24 @@
                     <img src="./image/sky-sports-1.svg" alt="Sky sports">
                 </div>
             </div>
+            </div>
         </section>
-        <section class="presentation"> 
-            <div class="container">
-                <div class="get">
-                    <div class="tel">
-                        <img src="./image/Group 692.png" alt="photo of app">
-                    </div>
-                    <div class="title">
+        <section class="presentation get-down"> 
+            <div class="container down-box">
+                <!-- <div class="watch">
+                    <img src="./image/Frame 2.png" alt="">
+                </div> -->
+                <div class="title-down">
+                    
                         <h2>Get Up Close With Your Team</h2>
-                    <p class="title-paragraph"> 
+                    <p class="title-paragraph down"> 
                         If you’re interested in the scores of more than one team (it’s OK,
                          we won’t tell your mates you support two clubs!), you can choose the scores and 
                          competitions that matter to you using the ‘My Scores’ section. So, make sure you’re a 
                          top-flight football fan by downloading the Football Score Centre now. 
                         It’s got all this:
                     </p>
-                    <div class="btn-app">     
+                    <div class="btn-app btn-down">     
                         <button class="store-btn1"> 
                                 
                                     <svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -425,9 +424,9 @@
                                     </button>
                         </div>
                 </div>
-                </div>
-               
+                
             </div>
+            
 
         </section>
     </main>
@@ -472,37 +471,31 @@
 
 $('.sliderbar').slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 750,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
+      breakpoint: 360,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+    
+    
   ]
 });
     </script> 
