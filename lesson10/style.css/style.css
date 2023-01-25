@@ -20,6 +20,7 @@ a{
     cursor: pointer;
     text-decoration: none;
     color:inherit;
+    width: fit-content;
 }
 button{
     cursor: pointer;
@@ -82,6 +83,7 @@ main{
     width: 100%;
     margin-right: 4px;
     padding: 0;
+    /* fill:  #334382;; */
 }
 .logo a{
     width: 100%;
@@ -154,13 +156,13 @@ main{
 .btn-app{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
-    margin-right:calc(var(--index)*10);
+    justify-content: flex-start;
+    width: 100%;
+    gap: 26%;
 }
 .store-btn1{
     display: flex;
-    flex-basis: 47.5%;
+    flex-basis: 30%;
     max-height: fit-content;
     gap: 10px;
     background: #000000;
@@ -202,12 +204,11 @@ main{
 }
 .store-btn2{
     display: flex;
-    flex-basis: 47.5%;
+    flex-basis: 30%;
     max-height: fit-content;
     gap: 10px;
     background: #000000;
     border-radius: 7.33503px;
-    
     color: #FFFFFF;
     padding: 6px 2px 5px 11px;
 }
@@ -259,27 +260,32 @@ color: #FFFFFF;
 .experience {
     display: flex;
     margin: 0 auto;
+    gap: 5%;
+    position: relative;
     
-    background-image: url(../image/Ronaldo.svg);
-    background-position-x: left;
-    background-position-y: center;
-    background-size: cover;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: inherit;
     
 }
 .image-video{
     display: flex;
     flex-direction: column;
-    flex-basis: 57%;
-    max-width: 56%;
+    flex-basis: 48%;
+    max-width: 48%;
     gap: 5px;
     position: relative;
-    padding: calc(var(--index)*1) calc(var(--index)*3) calc(var(--index)*7) calc(var(--index)*18);
-    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);;
+    padding: 5% 10% 5% 15%;
+    background: url(../image/Ronaldo.svg) center center / cover no-repeat;
+   z-index: 1;
+   
+}
+.image-video::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 805px;
+    height: 592px;
+    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+    z-index: 0;
 }
 
 .experience-text{
@@ -300,6 +306,7 @@ color: #FFFFFF;
     max-width: 360px;
     max-height: 218px;
     width: 100%;
+    z-index: 2;
 }
 .schedule{
     display: flex;
@@ -393,7 +400,7 @@ input[type=range]  {
     width: 27px;
     height: 12px;
     background: #979797;
-border-radius: 104.896px;
+    border-radius: 104.896px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -410,7 +417,7 @@ border-radius: 104.896px;
     -webkit-appearance: none;
     margin-top: -4px;
     background: #FFFFFF;
-box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
   }
   .video-img{
     margin-left: 40px;
@@ -419,6 +426,7 @@ box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
     width: 100%;
     
     border-radius: 4px;
+    z-index: 1;
   }
   .video-img img{
     width:100%;
@@ -878,7 +886,7 @@ height: 11px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 37%;
+    padding-left:40%;
     
 }
 .get-down{
@@ -903,17 +911,9 @@ height: 11px;
     width: 100%;
     align-items: flex-start;
     justify-content: center;
-    background-color: #F2F2F4;
+    
 }
-/* .title-down::before{
-    content: '';
-    width: 440px;
-    height: 252px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);;
-} */
+
 .title-down h2{
     display: flex;
     align-self: flex-start;
@@ -931,6 +931,52 @@ height: 11px;
 }
 .btn-down{
     margin-bottom: 30%;
+}
+footer{
+    background-color: #00ADEE;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.footer-logo svg{
+    display: flex;
+    align-self: center;
+    margin-top: -5px;
+    margin-right: 1%;
+}
+.footer-logo a{
+    color: #ffffff;
+}
+.footer-social ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 40%;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+}
+.social{
+    display: flex;
+    gap: 12%;
+    flex-basis: 20%;
+}
+.social button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:#ffffff;
+    width: 25px;
+    height: 25px;
 }
 
 @media screen and (max-width:720px){
@@ -955,8 +1001,9 @@ height: 11px;
         margin-bottom: calc(var(--index)*4);
      }
      .title{
-        width: 100%;
+        width: 86%;
         text-align: center;
+        margin-bottom: 5%;
      }
      .title h1{
         text-align: center;
@@ -974,14 +1021,14 @@ height: 11px;
      .btn-app{
         margin: 0;
         gap: 28px;
-        justify-content: space-between;
+        justify-content: center;
      }
      .store-btn2{
-        flex-basis: 50%;
+        flex-basis: 28%;
         padding: 5px 3px 5px 6px;
      }
      .store-btn1{
-        flex-basis: 50%;
+        flex-basis: 30%;
     padding: 3px 3px 3px 5px;
      }
     .tel-frame{
@@ -992,13 +1039,14 @@ height: 11px;
     }
     .experience-text{
         order:1;
-       align-items: center;
-       justify-content: center;
-       text-align: center;
-       
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4%;
     }
      .text-head{
         align-self: center;
+        text-align: center;
      }
     .link-text{
         align-self: center;
@@ -1010,10 +1058,19 @@ height: 11px;
     .image-video{
         margin: 0 auto;
         max-width: 720px;
-        background: linear-gradient(180deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
-        
         width: 100%;
         flex-basis: 100%;
+        
+    }
+    .image-video::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -5%;
+            width: 720px;
+            height: 379px;
+            background: linear-gradient(180deg, #FFFFFF 0.16%, rgba(255, 255, 255, 0) 0.14%), rgba(255, 255, 255, 0.5);
+            z-index: 0;
         
     }
 
@@ -1163,7 +1220,9 @@ height: 11px;
         width: 100%; 
         color: #4F4F4F;
         text-align: center;
-        align-self: center;        
+        align-self: center;  
+        padding: 0 5%;
+        /* max-width: ;       */
 }
 .content-block svg{
     display: flex;
@@ -1227,14 +1286,23 @@ height: 11px;
 .slick-dots.slick-dots::before{
     content: "";
     position: absolute;
-    width: 30%;
+    width: 50%;
     height: 100%;
     z-index: 1;
     top: 0%;
     left: 45%;
     background: linear-gradient(270deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
 }
-
+.slick-dots.slick-dots{
+    position: absolute;
+    bottom: -52px;
+    display: block;
+    width: 52%;
+    padding: 0;
+    margin-left: 31%;
+    list-style: none;
+    text-align: center;
+}
 .img-sports{
     display: flex;
     gap: 7%;
@@ -1244,6 +1312,60 @@ height: 11px;
     flex-wrap: wrap;
     padding: 9px 14%;
     width: 100%;
+}
+.down-box{
+    
+    padding-left:0;
+    
+}
+.get-down{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    background-position-y: bottom;
+    background-size: 100%;
+}
+.title-down{
+    padding-bottom: 60%;
+    padding-top: 6%;
+}
+.title-down h2{
+    display: flex;
+text-align: center;
+align-self: center;
+}
+.down{
+    margin-bottom: 12%;
+}
+.btn-down{
+    margin-bottom: 30%;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+}
+.footer-social{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 8%;
+    gap: 14%;
+    margin-bottom: 5%;
+}
+.footer-logo{
+    align-self: flex-start;
+    order: 1;
+    margin-bottom: 1%;
+}
+
+.social{
+    order: 1;
+    align-self: flex-start;
+}
+.footer-social ul{
+    align-self: flex-start;
+    order: 2;
+    flex-basis: 100%;
+    gap: 5%;
+    margin-left: 3%;
 }
 
 }
@@ -1328,11 +1450,19 @@ height: 11px;
     .image-video{
         margin: 0 auto;
         max-width: 360px;
-        background: linear-gradient(180deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
-        padding: 0;
         width: 100%;
         flex-basis: 100%;
-        padding: 10px 15px;
+        
+    }
+    .image-video::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 360px;
+            height: 379px;
+            background: linear-gradient(180deg, #FFFFFF 0.16%, rgba(255, 255, 255, 0) 0.14%), rgba(255, 255, 255, 0.5);
+            z-index: 0;
         
     }
 
@@ -1548,5 +1678,41 @@ height: 11px;
     flex-wrap: wrap;
     padding: 14% 0%;
     width: 100%;
+}
+.get-down{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    background-position-y: bottom;
+    background-size: 100%;
+}
+.title-down{
+    padding-bottom: 90%;
+}
+.footer-social{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1%;
+    gap: 14%;
+    padding-bottom: 11%;
+    margin-bottom: 5%;
+
+}
+.footer-logo{
+    align-self: flex-start;
+    order: 1;
+    margin-bottom: 1%;
+}
+
+.social{
+    order: 1;
+    align-self: flex-start;
+}
+.footer-social ul{
+    align-self: flex-start;
+    order: 2;
+    flex-basis: 100%;
+    gap: 5%;
+    margin-left: 5%;
 }
 }
