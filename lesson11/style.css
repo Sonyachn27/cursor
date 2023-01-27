@@ -26,81 +26,93 @@ margin: 0 auto;
   transform: translate(-50%, -50%);
   background: url(./milky-way-2695569__480.jpg) center center /cover no-repeat;
 }
-.sword{
+.sword1,
+.sword2,
+.sword3,
+.sword4{
   display: block;
   position: absolute;
   top: 15px;
   left: 50px;
   width: 100px;
   height: 10px;
-    border-radius: 20px;
-    background: linear-gradient( 90deg, white 10%, black 5%, white 30%);
-  animation:  swords1 0.5s infinite ease-out;
-  animation-play-state: paused;
+  border-radius: 20px;
+  background: linear-gradient( 90deg, white 10%, black 5%, white 30%);
+  
   }
 .sword2,
 .sword3{ 
   top: 65px;
  }
- .sword1{
-  animation-name:  swords1;
- }
  .sword2{
+  
   background: linear-gradient( 270deg, white 10%, black 5%, white 30%);
-  animation-name:  swords2;
+  
   }
-.sword3{
-  animation-name:  swords3 ;
-}
-
 .sword4{
-top: 120px;
-animation: swords4;
+  top: 120px;
+  
 }
-.arrow{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-}
+.sword2{
+  
+  background: linear-gradient( 270deg, white 10%, black 5%, white 30%);
+  
+  }
 
-/* @keyframes sword1{
-  to{
-    transform:perspective(180deg);
+ .sword1::before,
+  .sword1::before,
+  .sword2::before,
+  .sword2::after,
+  .sword3::before,
+  .sword3::after,
+  .sword4::before,
+  .sword4::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    border-radius: 20px;
+    animation: animate 30s linear infinite;
   }
-} */
-@keyframes sword2{
-  to{
-    transform:  rotate(34deg);
+  .sword::after {
+    filter: blur(20px);
   }
-}
-@keyframes sword3{
-  to{
+  @keyframes animate {
+    0%,
+    100% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 300% 0;
+    }
+  }
+  .fond:hover > .sword2{
+
+     transform:  rotate(34deg) ;
+    
+  }
+  .fond:hover > .sword3{
     transform:  rotate(329deg);
+    
   }
-}
-/* @keyframes sword4{
-  to{
-    transform:perspective(180deg);
+  .fond:hover > .sword1,
+   .fond:hover > .sword4{
+    display: none;
   }
-} */
-
-/* @keyframes myfirst {
-  0%   {background: red; left: 0px; top: 0px;}
-  25%  {background: yellow; left: 200px; top: 0px;}
-  50%  {background: blue; left: 200px; top: 200px;}
-  75%  {background: green; left: 0px; top: 200px;}
-  100% {background: red; left: 0px; top: 0px;}
-} */
-/* .fond:hover > .sword2{
+ .fond:hover > .sword3::before,
+ .fond:hover > .sword3::after{
   transform:  rotate(34deg);
-}
-.fond:hover > .sword3{
-  transform:  rotate(329deg);
-}
-.fond:hover > .sword1{
-  display: none;
-}
-.fond:hover > .sword4{
-  display: none;
-} */
+ }
+ .fond:hover > .sword2::before,
+ .fond:hover > .sword2::after{
+  transform:  rotate(295deg);
+ }
+
+
+
+  
