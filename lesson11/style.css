@@ -3,9 +3,15 @@
   padding: 0;
 }
 .container{
-max-width: 1000px;
+width: 1000px;
 height: 500px;
 margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+overflow: hidden;
+flex-direction: column;
 
 }
 .jedi{
@@ -13,106 +19,168 @@ margin: 0 auto;
   width: 100%;
   align-items: center;
   justify-content: center;
-  height: 100%;
   margin: 0 auto;
   padding-top: 50px;
 }
 .fond{
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  transform: translate(-50%, -50%);
-  background: url(./milky-way-2695569__480.jpg) center center /cover no-repeat;
+  
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 15px;
+  background: url(./pexels-aleksandar-pasaric-1694000.jpg) center center /cover no-repeat;
 }
-.sword1,
-.sword2,
-.sword3,
-.sword4{
+.text{
+  display: none;
+  font-size: 1.5rem;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  color:  rgb(253, 250, 90) ;
+}
+.sword{
   display: block;
   position: absolute;
-  top: 15px;
-  left: 50px;
-  width: 100px;
+  translate: 50% 50%;
+  width: 150px;
   height: 10px;
   border-radius: 20px;
-  background: linear-gradient( 90deg, white 10%, black 5%, white 30%);
+  background: linear-gradient( 90deg, #eae5e5 10%, black 5%, white 30%);
   
+  border: 1px solid white ;
   }
-.sword2,
-.sword3{ 
+.sword2{ 
   top: 65px;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
  }
- .sword2{
-  
+ .sword2{ 
   background: linear-gradient( 270deg, white 10%, black 5%, white 30%);
-  
+  box-shadow: -1px 0 69px 11px rgb(251, 248, 162);
   }
 .sword4{
-  top: 120px;
-  
+  top: 100px;
 }
-.sword2{
-  
-  background: linear-gradient( 270deg, white 10%, black 5%, white 30%);
-  
-  }
 
- .sword1::before,
-  .sword1::before,
-  .sword2::before,
-  .sword2::after,
-  .sword3::before,
-  .sword3::after,
-  .sword4::before,
-  .sword4::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    border-radius: 20px;
-    animation: animate 30s linear infinite;
-  }
-  .sword::after {
-    filter: blur(20px);
-  }
-  @keyframes animate {
-    0%,
-    100% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 300% 0;
-    }
-  }
-  .fond:hover > .sword2{
+ .fond:hover > .sword2{
+  top: 200px;
 
-     transform:  rotate(34deg) ;
-    
-  }
-  .fond:hover > .sword3{
-    transform:  rotate(329deg);
-    
-  }
-  .fond:hover > .sword1,
-   .fond:hover > .sword4{
-    display: none;
-  }
- .fond:hover > .sword3::before,
- .fond:hover > .sword3::after{
-  transform:  rotate(34deg);
- }
- .fond:hover > .sword2::before,
- .fond:hover > .sword2::after{
-  transform:  rotate(295deg);
+   transform:  rotate(34deg) ;
+   background: linear-gradient( 270deg, rgb(255, 248, 50) 10%, black 5%, rgb(231, 250, 108) 30%);
+   transition: .75s ease;
+   box-shadow: -1px 0 35px 9px  rgb(245, 229, 13);
+}
+.fond:hover > .sword4{
+  top: 200px;
+  transition: .75s ease;
+  transform:  rotate(-29deg); 
+  background: linear-gradient( 90deg, rgb(40, 55, 167) 10%, black 5%, rgb(16, 131, 246) 30%);
+  box-shadow: -1px 0 35px 9px  rgb(13, 102, 245) ;
+}
+.fond:hover > .sword1{
+  display: none;
+}
+.fond:hover > .text{
+  display: block;
+} 
+
+ .wrapper{
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin:0 auto;
+  overflow: hidden;
+  height: 90px;
  }
 
+ .ball{
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 50px;
+  left: 15px;
+ }
 
+ .ball1 {
+   position: absolute;
+   top: 16px;
+   left: 40px;
+  background: radial-gradient(circle at 34% 49%, white 1px, rgb(47, 49, 236) 36%, blue 60%, rgb(47, 49, 236)100%); 
+  animation: ball1 1s infinite alternate 1s ease-out;
+  animation-play-state: paused;
+}
 
-  
+.ball2{
+  background: radial-gradient( circle at 33% 47%,white 0%, rgb(47, 49, 236) 32%,rgb(96 226 182) 73%);
+}
+.ball3{
+  background: radial-gradient( circle at 33% 47%,white -8%,rgb(96 226 182) 73%),linear-gradient( rgb(96 226 182)44%, rgb(96 226 182)60%)
+}
+.ball4{
+  background: radial-gradient( circle at 33% 47%,white -15%,rgb(96 226 182) 60%);
+}
+.ball5{
+  background: radial-gradient( circle at 33% 47%,white -15%, rgb(73 180 165)60%);
+}
+.ball6{
+  background:radial-gradient( circle at 33% 47%,white -15%, rgb(66 159 148)60%);
+}
+.ball7 {
+  position: absolute;
+   top: 20px;
+   left: 400px;
+  background: radial-gradient( circle at 33% 47%,white -15%, rgb(59 140 133)60%);
+  animation: ball7 1s infinite alternate linear;
+  animation-play-state: paused;
+} 
+
+.ball1:before{
+  content: '';
+  position: absolute;
+  top: 94px;
+  left: 71px;
+  width: 0px;
+  height: 2px;
+  background: none;
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.6);
+}
+.ball7:before{
+  content: '';
+  position: absolute;
+  top: 95px;
+  left: 40px;
+  width: 0px;
+  height: 2px;
+  background: none;
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.6);
+}
+
+@keyframes ball1 {
+  0%,50% 
+  {transform: rotate(0);} 
+    100%
+    {transform: rotate(30deg);
+      top: -4px;
+     left: 25px;
+      transition: .75s ease-in;
+    }
+}
+@keyframes ball7 {
+  0%,50% 
+  {transform: rotate(0);}
+  100%
+    {transform: rotate(-30deg);
+      top:-4px;
+      left: 430px;
+      transition: .75s ease-in;
+    }
+} 
+.wrapper:hover > .ball1,
+.wrapper:hover > .ball7 {
+  animation-play-state: running;
+}
