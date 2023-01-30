@@ -66,7 +66,7 @@ flex-direction: column;
  .fond:hover > .sword2{
   top: 200px;
 
-   transform:  rotate(34deg) ;
+   transform:  rotate(40deg) ;
    background: linear-gradient( 270deg, rgb(255, 248, 50) 10%, black 5%, rgb(231, 250, 108) 30%);
    transition: .75s ease;
    box-shadow: -1px 0 35px 9px  rgb(245, 229, 13);
@@ -74,7 +74,7 @@ flex-direction: column;
 .fond:hover > .sword4{
   top: 200px;
   transition: .75s ease;
-  transform:  rotate(-29deg); 
+  transform:  rotate(-40deg); 
   background: linear-gradient( 90deg, rgb(40, 55, 167) 10%, black 5%, rgb(16, 131, 246) 30%);
   box-shadow: -1px 0 35px 9px  rgb(13, 102, 245) ;
 }
@@ -135,7 +135,7 @@ flex-direction: column;
    top: 20px;
    left: 400px;
   background: radial-gradient( circle at 33% 47%,white -15%, rgb(59 140 133)60%);
-  animation: ball7 1s infinite alternate linear;
+  animation: ball7  1s infinite alternate ease-out;
   animation-play-state: paused;
 } 
 
@@ -176,7 +176,7 @@ flex-direction: column;
   100%
     {transform: rotate(-30deg);
       top:-4px;
-      left: 430px;
+      left: 415px;
       transition: .75s ease-in;
     }
 } 
