@@ -2047,6 +2047,11 @@ footer{
 
 }
 @media screen and (max-width:550px){
+    .store-btn1,
+     .store-btn2 {
+        flex-basis: 35%;
+        
+    }
     .circle8{
         left: 35px;
       }  
@@ -2071,6 +2076,21 @@ footer{
         max-width: 320px;
         height: 161px;
         margin-right: 178px;
+    }
+}
+@media screen and (max-width:430px){
+    .circle8{
+        left: 5px;
+      }  
+      .circle9{
+        left: 75px;
+      }  
+      .tel-img {
+        padding: 49px 0px 68px 14px;
+    }
+    .slider-child {
+        
+        margin-right: 120px;
     }
 }
 
