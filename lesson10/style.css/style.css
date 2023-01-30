@@ -2080,17 +2080,17 @@ footer{
 }
 @media screen and (max-width:430px){
     .circle8{
-        left: 5px;
+        left: -10px;
       }  
       .circle9{
-        left: 75px;
+        left: 65px;
       }  
       .tel-img {
         padding: 49px 0px 68px 14px;
     }
     .slider-child {
         
-        margin-right: 120px;
+        margin-right: 100px;
     }
 }
 
