@@ -14,6 +14,9 @@
     src: url(../font/font/HelveticaNeue.ttf);
     
 }
+a{
+    cursor: pointer;
+}
 .container,
 .container-fluid{
     max-width: 945px;
@@ -226,9 +229,19 @@ b {
     margin-bottom: 60px;
 }
 .story-photo{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    
+}
+.story-photo img{
     border: 1px solid #DBDBDB;
     border-radius: 50%;
     padding: 4px;
+}
+.story-photo span {
+    font-weight: 700;
+    font-size: 14px;
 }
 .story-block::after{
     content: '';
@@ -288,4 +301,7 @@ b {
 }
 .post:hover > svg path{
     fill: #262626;
+    }
+    .photo-block{
+        overflow: hidden;
     }
