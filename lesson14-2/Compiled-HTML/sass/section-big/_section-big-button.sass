@@ -1,0 +1,68 @@
+@mixin display
+    display: flex
+    flex-direction: column
+    gap: 24px
+.block-download
+    display: flex
+    gap: 24px
+.big-size
+    display: flex
+    flex-direction: column
+    .btn-block_icon-group
+        #disable
+            display: none
+.bid-size_title
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    max-width: 1000px
+    margin: 10px auto
+    width: 100%
+    font-weight: 600
+    font-size: 25px
+    line-height: 30px
+    color: #2C2C2C
+.btn-block
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    max-width: 1000px
+    margin: 30px auto
+    gap: 130px
+.btn-block_primary-button
+    @include display
+.btn-block_btn-disabled
+    @include display
+    flex-direction: column
+.btn-block_btn-secondary
+    @include display
+.btn-block_btn-focused
+    @include display
+.btn-big
+    width:144px
+    height:46px
+    padding: 12px 20px
+    border-radius: 5px
+    gap: 10px
+    text-alight: center
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: 500
+    font-size: 15px
+    line-height: 18px
+    border: none
+.btn-big 
+    img 
+        width: 24px
+        height: 24px
+.btn-block_icon-group
+    @include display
+    justify-content: flex-start
+@import "./button-primary"
+@import "./btn-disabled"
+@import "./btn-secondary"
+@import "./btn-focused"
+@import "./btn-icon"
+@import "./icon-group_tab-group"
+@import "./size-btn"

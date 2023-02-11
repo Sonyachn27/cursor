@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="sass/style.css")
+    body 
+        section.big-size
+            .bid-size_title Buttons Big
+            .btn-block
+                .block-download
+                    .btn-block_primary-button
+                        include btn-block_primary-button/button-primary.pug
+                        include btn-block_primary-button/icon-right.pug
+                        include btn-block_primary-button/icon-left.pug
+                    .btn-block_btn-disabled
+                        include btn-disabled/btn-disabled.pug
+                        include btn-disabled/btn-disabled_icon-right.pug
+                        include btn-disabled/btn-disabled_icon-left.pug
+                    .btn-block_btn-secondary
+                        include btn-secondary/btn-secondary.pug
+                        include btn-secondary/btn-secondary_icon-right.pug
+                        include btn-secondary/btn-secondary_icon-left.pug
+                    .btn-block_btn-focused
+                        include btn-focused/btn-focused.pug
+                        include btn-focused/btn-focused-right.pug
+                        include btn-focused/btn-focused-left.pug
+                .btn-block_icon-group 
+                    include btn-block_icon-group/icon-group.pug
+                    include btn-block_icon-group/icon-group_tab-group.pug
+                    include btn-block_icon-group/icon-group_size-group.pug
+        section.small-size
+            .bid-size_title Buttons Small
+            .btn-block
+                .download-tag
+                    .block-download
+                        .btn-block_primary-button
+                            include btn-block_primary-button/button-primary.pug
+                            include btn-block_primary-button/icon-right.pug
+                            include btn-block_primary-button/icon-left.pug
+                        .btn-block_btn-disabled
+                            include btn-disabled/btn-disabled.pug
+                            include btn-disabled/btn-disabled_icon-right.pug
+                            include btn-disabled/btn-disabled_icon-left.pug
+                        .btn-block_btn-secondary
+                            include btn-secondary/btn-secondary.pug
+                            include btn-secondary/btn-secondary_icon-right.pug
+                            include btn-secondary/btn-secondary_icon-left.pug
+                        .btn-block_btn-focused
+                            include btn-focused/btn-focused.pug
+                            include btn-focused/btn-focused-right.pug
+                            include btn-focused/btn-focused-left.pug
+                    .block-tag 
+                        .tag-wrap 
+                            include tag-wrap/tag-large.pug
+                            include tag-wrap/tag-small.pug
+                .btn-block_icon-group 
+                    .icon-group
+                        include btn-block_icon-group/icon-group_tab-group.pug
+                        include btn-block_icon-group/icon-group.pug
+                        include btn-block_icon-group/icon-group_size-group.pug
+                    .btn-block_search-group 
+                        include btn-block_search-group/search-group.pug
