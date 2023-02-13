@@ -30,6 +30,7 @@
     margin-bottom: 188px;
 }
 .logo__link{
+    width: -moz-fit-content;
     width: fit-content;
 }
 .adventure__presentation{
@@ -42,7 +43,6 @@
     margin-bottom: 450px;
 }
 .presentation__title{
-    font-style: normal;
     font-weight: 400;
     font-size: 100px;
     line-height: 100px;
@@ -52,18 +52,17 @@
 }
 .presentation__text{
     color: $gold-font;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.24em;
-    font-family: $gold-font;
+    font-family: $fonts-text;
     margin-bottom: 40px;
 }
 .presentation__paragraph {
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     width: 100%;
     max-width: 513px;

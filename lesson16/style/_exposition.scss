@@ -16,6 +16,7 @@
     padding-left: 200px;
     padding-top: 145px;
     z-index: 1;
+    align-items: center;
 }
 .readout__info{
     display: flex;
@@ -82,6 +83,9 @@
     max-width: 512px;
     width: 100%;
     margin-bottom: 64px;
+        img{
+            width: 100%;
+        }
 }
 .content__images{
     display: flex;

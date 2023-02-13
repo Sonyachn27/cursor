@@ -1,0 +1,217 @@
+@media screen and (max-width:1023px){
+    .container{
+        max-width: 995px;
+    }
+    .adventure{
+        padding: 0;
+    }
+    .adventure__logo{
+        justify-content: flex-start;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    .adventure__presentation{
+        margin-bottom: 50px;
+    }
+    .presentation__title {
+        font-size: 85px;
+        line-height: 75px;
+        margin-bottom: 12px;
+    }
+    .presentation__text {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+    .presentation-paragraph{
+        font-size: 1rem;
+    }
+    .presentation__btn {
+        padding: 8px 10px;
+        width: 83px;
+        height: 34px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .content{
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    
+    .content_readout {
+        display: flex;
+        gap: 20px;
+    }
+    .readout{
+        max-width: 550px;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+    .readout__info{
+        max-width: 364px;
+        margin-top: 45px;
+        margin-left: 37px;
+    }
+    .readout__span{
+        font-size: 90px;
+        line-height: 110%;
+        left: -20px;
+    }
+    .gold__line {
+        width: 27px;
+        height: 2px;
+    }
+    .gold__text{
+        font-size: 10px;    
+    }
+    .readout__title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+.readout__paragraph {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 27px;
+    margin-right: 0px;
+}
+.content__img{
+    max-width: 420px;
+}
+.content__images {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.count__amount {
+    font-size: 65px;
+    line-height: 85px;
+}
+.count__gold {
+    font-size: 10px;
+    line-height: 18px;
+}
+.explore {
+    gap: 10px;
+}
+.explore_img {
+    max-width: 550px;
+}
+.foo_logo{
+    justify-content: space-between;
+}
+}
+@media screen and (max-width: 822px){
+    .container{
+        max-width: 860px;
+    }
+    .adventure{
+        padding: 0;
+    }
+    .adventure__wrap{
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adventure__logo{
+        justify-content: center;
+    }
+    .adventure__presentation{
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .presentation__title {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .content{
+        margin-bottom: 50px;
+    }
+    .content_readout2{
+        .content__img{
+            order: 2;
+        }
+    }
+    .content_readout {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .readout__span{
+        font-size: 90px;
+        line-height: 110%;
+    }
+    .gold__line {
+        width: 27px;
+        height: 2px;
+    }
+    .gold__text{
+        font-size: 10px;    
+    }
+    .readout__title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+.content__img{
+    max-width: 420px;
+}
+.content__images {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.count__wrap {
+    gap: 50px;
+}
+.explore_img {
+    max-width: 430px;
+}
+.foo_logo{
+    justify-content: space-between;
+}
+}
+@media screen and (max-width:720px){
+    .count__wrap::before {
+        top: 300px;
+    }
+    .count__wrap {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .count__amount {
+        font-size: 85px;
+    }
+    .explore__wrap {
+        gap: 50px;
+    }
+    .explore {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    .explore__info{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+   
+}
+@media screen and (max-width:550px){
+    .btn__group{
+        gap: 15px;
+    }
+}
+@media screen and (max-width:360px){
+    .count__wrap::before {
+        top: 430px;
+    }
+    .count__amount{
+        font-size: 100px;
+    }
+}
