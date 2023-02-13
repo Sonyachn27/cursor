@@ -1,0 +1,14 @@
+.foo_logo{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn__group {
+    display: flex;
+    gap: 44px;
+}
+.btn__group button{
+    background: inherit;
+    border: none;
+}
