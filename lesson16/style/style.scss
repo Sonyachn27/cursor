@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+$font-color: rgba(255, 255, 255, 0.8);
+$title-color: #ffffff;
+$gold-font: #D3BA74;
+$count:rgba(255, 255, 255, 0.13);
+$fonts-logo: 'Major Mono Display';
+$fonts-title: 'Playfair Display';
+$fonts-text: 'Poppins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0b1f28;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    max-width: 1255px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+@mixin paragraph{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 513px;
+    font-family: $fonts-text;
+    color: $font-color;
+    margin-bottom: 47px;
+}
+@import "./adventure.scss";
+@import "./exposition.scss";
+@import "./result.scss";
+@import "./footer.scss";
