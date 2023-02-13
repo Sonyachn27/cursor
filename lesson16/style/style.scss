@@ -16,13 +16,14 @@ $fonts-text: 'Poppins';
 body{
     background: #0b1f28;
     margin: 0 auto;
+    font-style: normal;
 }
 .container{
     width: 100%;
     max-width: 1255px;
     display: flex;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 15px 15px;
     position: relative;
 }
 a{
@@ -48,3 +49,4 @@ button{
 @import "./exposition.scss";
 @import "./result.scss";
 @import "./footer.scss";
+@import "./mobil.scss";
