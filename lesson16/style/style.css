@@ -310,6 +310,7 @@ button {
   display: flex;
   margin-bottom: 80px;
   position: relative;
+  justify-content: space-between;
 }
 
 .explore::before {
@@ -332,7 +333,6 @@ button {
   font-family: "Poppins";
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 47px;
-  margin-right: 126px;
 }
 
 .explore_img {
