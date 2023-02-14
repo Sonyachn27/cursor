@@ -361,11 +361,16 @@ button {
 }
 
 @media screen and (max-width: 1305px) {
+  .content {
+    margin-bottom: 50px;
+  }
   .content__img {
     max-width: 465px;
   }
   .readout {
     max-width: 623px;
+    padding-left: 140px;
+    padding-top: 110px;
   }
   .content__images {
     flex-wrap: wrap;
@@ -373,12 +378,12 @@ button {
   }
   .content__images a {
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
     padding: 0;
   }
   .content__images a img {
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
   }
   .readout__span {
     left: -19px;

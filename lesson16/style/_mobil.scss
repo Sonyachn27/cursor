@@ -1,20 +1,25 @@
 @media screen and (max-width:1305px){
+   .content{ 
+    margin-bottom: 50px;
+   }
     .content__img {
         max-width: 465px;
     }
 .readout {
     max-width: 623px;
+    padding-left: 140px;
+    padding-top: 110px;
 }
 .content__images {
     flex-wrap: wrap;
     justify-content: center;
         a{
             width: 100%;
-            max-width: 380px;
+            max-width: 400px;
             padding: 0;
                 img{
                     width: 100%;
-                    max-width: 380px;
+                    max-width: 400px;
                 }
         }
 }
