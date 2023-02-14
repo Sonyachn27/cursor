@@ -35,7 +35,9 @@
 }
 .logo__link:hover{
     background: -webkit-linear-gradient(270deg, #474bff 0%, #fcff47 100%);
+    background: linear-gradient(270deg, #474bff 0%, #fcff47 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.75s ease-in-out;
   transform: scaleX(1.1);
@@ -99,7 +101,9 @@
     transform: scale(1.1);
     transition:  0.75s ease-out;
     background: -webkit-linear-gradient(270deg, #474bff 0%, #fcff47 100%);
+    background: linear-gradient(270deg, #474bff 0%, #fcff47 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .75s ease;
 }
